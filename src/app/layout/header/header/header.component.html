@@ -1,0 +1,163 @@
+<!--<header id="header" class="header fixed-top d-flex align-items-center p-1" style="background-color: aliceblue;">
+   
+  <div class="d-flex align-items-center justify-content-between">-->
+ <!--1stcode-->  
+<nav class="navbar p-1 navbar-expand-sm navbar-white hover-cursor navbar-light" style="background-color:aliceblue">
+
+      <div class="container">   
+<img src="assets/download (1).jpg" alt="" width="55pxpx" style="padding-left: 20px;"> 
+<a class="navbar-collapse navbar-brand text-primary font-bold"  ><h4>Admin</h4></a> 
+<i (click)="onToggleSidebar()" class="bi bi-list toggle-sidebar-btn custom-icon" role="button" tabindex="0"></i></div>
+
+  <div class="search-bar">
+     <form class="search-form d-flex align-items-center" method="POST" action="#"> <input type="text" name="query" 
+   placeholder="Search" title="Enter search keyword" style="width: 300px;"><i class="bi bi-search" role="button" tabindex="0"></i></form>
+  </div>
+  <nav class="header-nav ms-auto">
+
+     <ul class="d-flex align-items-center">
+      <ul class="no-list-style">
+        <li class="nav-item d-block d-lg-none"> <a class="nav-link nav-icon search-bar-toggle " href="#"> <i class="bi bi-search"></i> </a></li>
+        <li class="nav-item dropdown">
+        
+           <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown"> <i class="bi bi-bell icon"></i> 
+            <span class="position-absolute start-10 translate-middle badge square-pill bg-primary badge">4</span> </a>
+        
+           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+              <li class="dropdown-header"> You have 4 new notifications <a href="#">&nbsp;&nbsp;<span class="badge rounded-pill bg-primary p-2 ms-7">view all</span></a></li>
+              <li>
+                 <hr class="dropdown-divider">
+              </li>
+              <li class="notification-item">
+                 <i class="bi bi-exclamation-circle text-warning"></i>
+                 <div>
+                    <h4>Sowmya</h4>
+                    <p>Soundarya</p>
+                    <p>Kavitha</p>
+                 </div>
+              </li>
+              <li>
+                 <hr class="dropdown-divider">
+              </li>
+              <li class="notification-item">
+                 <i class="bi bi-x-circle text-danger"></i>
+                 <div>
+                    <h4>Angular</h4>
+                    <p>Bootstrap</p>
+                    <p>SpringBoot</p>
+                 </div>
+              </li>
+              <li>
+                 <hr class="dropdown-divider">
+              </li>
+              <li class="notification-item">
+                 <i class="bi bi-check-circle text-success"></i>
+                 <div>
+                    <h4>Html</h4>
+                    <p>CSS</p>
+                    <p>Javascript</p>
+                 </div>
+              </li>
+              <li>
+                 <hr class="dropdown-divider">
+              </li>
+              <li class="notification-item">
+                 <i class="bi bi-info-circle text-primary"></i>
+                 <div>
+                    <h4>Project</h4>
+                    <p>Task</p>
+                    <p>POC</p>
+                 </div>
+              </li>
+              <li>
+                 <hr class="dropdown-divider">
+              </li>
+              <li class="dropdown-footer"> <a href="#">Show all notifications</a></li>
+           </ul>
+        </li>
+        <li class="nav-item dropdown">
+        
+           <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown"> <i class="bi bi-chat-left-text icon"></i> 
+            <span class="position-absolute start-10 translate-middle badge square-pill bg-success badge">3</span> </a>
+         
+           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+              <li class="dropdown-header"> You have 3 new messages <a href="#"><span class="badge rounded-pill bg-primary p-1 ms-2">View all</span></a></li>
+              <li>
+                 <hr class="dropdown-divider">
+              </li>
+              <li class="message-item">
+                 <a href="#">
+                    <img src="assests/download.jpg" alt="" class="rounded-circle">
+                    <div>
+                       <h4>sowmya</h4>
+                       <p>Good Luck...</p>
+                       <p>4 hrs. ago</p>
+                    </div>
+                 </a>
+              </li>
+              <li>
+                 <hr class="dropdown-divider">
+              </li>
+              <li class="message-item">
+                 <a href="#">
+                    <img src="assets/download.jpg" alt="" class="rounded-circle" width="20px">
+                    <div>
+                       <h4>Soundarya</h4>
+                       <p>All the Best....</p>
+                       <p>6 hrs. ago</p>
+                    </div>
+                 </a>
+              </li>
+              <li>
+                 <hr class="dropdown-divider">
+              </li>
+              <li class="message-item">
+                 <a href="#">
+                    <img src="assets/download (1).jpg" alt="" class="rounded-circle" width="20px">
+                    <div>
+                       <h4>Sowmya</h4>
+                       <p>Congratulations</p>
+                       <p>8 hrs. ago</p>
+                    </div>
+                 </a>
+              </li>
+              <li>
+                 <hr class="dropdown-divider">
+              </li>
+              <li class="dropdown-footer"> <a href="#">Show all messages</a></li>
+           </ul>
+        </li>
+        <li class="nav-item dropdown pe-3">
+           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown"> <img src="assets/download.jpg" 
+            alt="Profile" class="rounded-circle" width="40px"> <span class="d-none d-md-block dropdown-toggle ps-2">Sowmya</span> </a>
+           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+              <li class="dropdown-header">
+                 <h6>Sowmya</h6>
+                 <span>Developer</span>
+              </li>
+              <li>
+                 <hr class="dropdown-divider">
+              </li>
+              <li> <a class="dropdown-item d-flex align-items-center" [routerLink]="['profile']"> <i class="bi bi-person"></i> <span>My Profile</span> </a></li>
+              <li>
+                 <hr class="dropdown-divider">
+              </li>
+              <li> <a class="dropdown-item d-flex align-items-center" [routerLink]="['Account']"> <i class="bi bi-gear"></i> <span>Account Settings</span> </a></li>
+              <li>
+                 <hr class="dropdown-divider">
+              </li>
+              <li> <a class="dropdown-item d-flex align-items-center" [routerLink]="['f.a.q']"> <i class="bi bi-question-circle"></i> <span>Need Help?</span> </a></li>
+              <li>
+                 <hr class="dropdown-divider">
+              </li>
+              <li> <a class="dropdown-item d-flex align-items-center" [routerLink]="['login']"> <i class="bi bi-box-arrow-right"></i> <span>Sign Out</span> </a></li>
+           </ul>
+        </li>
+     </ul>
+     </ul>
+  </nav>
+   </nav> 
+
+
+
+

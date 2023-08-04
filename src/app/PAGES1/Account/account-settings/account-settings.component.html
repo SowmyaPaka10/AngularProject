@@ -1,0 +1,25 @@
+<form class="container">
+    <div class="pagetitle">
+      <h1>Account Settings</h1>
+      <nav>
+         <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="/" style="text-decoration: none;">Home</a></li>
+            <li class="breadcrumb-item">Users</li>
+            <li class="breadcrumb-item active">Account Settings</li>
+         </ol>
+      </nav>
+   </div>
+      <div style="margin-top: 20px;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="name">
+      </div><br>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="email" required>
+      </div><br>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="password" required>
+      </div><br>
+      <button type="submit">Save Changes</button>
+    </form>

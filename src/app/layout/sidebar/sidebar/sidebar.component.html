@@ -1,0 +1,46 @@
+<!--1st code-->
+<div id="sidebar" class="sidebar-fixed" style="width:250px;float: left; margin-top:0px;background-color:white;height: 500px;margin-left:0px;">
+
+  <div id="sidebar-content" style="padding-right: 20px;">
+<ul class="sidebar-nav" id="nav" style="list-style-type: none;">
+       <li class="nav-item" style="list-style-type: none;"> <a class="nav-link" [routerLink]="['Dashboard']"> <i class="bi bi-grid"></i>&nbsp; &nbsp;<span>Dashboard</span> </a></li>
+       <li class="nav-heading">Pages</li>
+       <div class="accordion accordion-flush" id="accordionExample">
+        <div class="accordion-item">
+        
+          <div class="accordion-header" id="heading-1">
+            
+            <div class="accordion-button" type="button" data-bs-toggle="collapse"
+    
+            data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
+       <li class="nav-item"> <a class="nav-link collapsed" [routerLink]="['profile']"> <i class="bi bi-person" style="font-size: 20px;"></i>&nbsp;&nbsp;<span style="font-size:20px;">Profile</span> </a></li>
+          </div>
+        </div>
+          <div id="chapter-1" class="accordion-collapse collapse"
+                      
+          aria-labelledby="heading-1" data-bs-parent="#accordionExample">
+    
+          <div class="accordion-body">
+              <a href="https://knotsolutions.akriviahcm.com/login?returnUrl=%2Ftimesheets%2Fuser-timesheets" target="_blank" style= "text-decoration:none;color: #012970;" >Akriviahcm</a><br>
+    
+              <a href="http://localhost:4200/login" target="_blank" style= "text-decoration:none;color: #012970;" >Login</a>
+          </div>
+        </div>
+        </div>
+       </div>
+       <li class="nav-item"> <a class="nav-link collapsed" [routerLink]="['Account']"> <i class="bi bi-gear"></i>&nbsp; &nbsp; <span style="font-size: large;">Account Settings</span></a></li>
+       <li class="nav-item"> <a class="nav-link collapsed" [routerLink]="['f.a.q']"> <i class="bi bi-question-circle"></i>&nbsp; &nbsp; <span style="font-size: large;">F.A.Q</span></a></li>
+       <li class="nav-item"> <a class="nav-link collapsed" [routerLink]="['contact']"> <i class="bi bi-envelope"></i>&nbsp; &nbsp; <span style="font-size: large;">Contact</span></a></li>
+       <li class="nav-item"> <a class="nav-link collapsed" [routerLink]="['register']"> <i class="bi bi-card-list"></i>&nbsp; &nbsp; <span style="font-size: large;">Register</span></a></li>
+       <li class="nav-item"> <a class="nav-link collapsed" [routerLink]="['login']"> <i class="bi bi-box-arrow-in-right"></i>&nbsp; &nbsp; <span style="font-size: large;">Login</span></a></li>
+       <li class="nav-item"> <a class="nav-link collapsed" [routerLink]="['error-404']"> <i class="bi bi-dash-circle"></i>&nbsp; &nbsp; <span style="font-size: large;">Error 404</span></a></li>
+       <li class="nav-item"> <a class="nav-link collapsed" [routerLink]="['blank']"> <i class="bi bi-file-earmark"></i>&nbsp; &nbsp; <span style="font-size: large;">Blank</span></a></li>
+</ul>
+  </div>
+</div>
+
+
+
+
+
+
